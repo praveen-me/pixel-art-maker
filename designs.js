@@ -37,17 +37,6 @@ var submitButton = document.getElementById('submitButton');
 
 submitButton.addEventListener('click', makeGrid);
 
-//Using jQuery to set color
-// $('body').on('click', 'td', function(e){
-//     var colorValue = $('#colorPicker').val();
-//     e.target.style.backgroundColor = colorValue;
-// })
-
-//
-
-// var body = document.querySelector('body');
-// var td = document.getElementsByTagName('td');
-
 $('body').on('click', 'td', function(e){
 	var colorValue = document.getElementById('colorPicker').value;
   	e.target.style.backgroundColor = colorValue;
