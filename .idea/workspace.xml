@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5e9d5e2-0e84-4424-88f4-2c51cd9fb9a0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/designs.js" beforeDir="false" afterPath="$PROJECT_DIR$/designs.js" afterDir="false" />
-    </list>
+    <list default="true" id="f5e9d5e2-0e84-4424-88f4-2c51cd9fb9a0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -21,7 +19,7 @@
           <file leaf-file-name="designs.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/designs.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="319">
+                <state relative-caret-position="737">
                   <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
                 </state>
               </provider>
@@ -49,7 +47,7 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="47">
+                <state relative-caret-position="20">
                   <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
                 </state>
               </provider>
@@ -107,7 +105,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../dart-project" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
@@ -154,12 +152,12 @@
       <workItem from="1529388603309" duration="11946000" />
       <workItem from="1529430983525" duration="1693000" />
       <workItem from="1529473657965" duration="13000" />
-      <workItem from="1529487659017" duration="394000" />
+      <workItem from="1529487659017" duration="1018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14046000" />
+    <option name="totallyTimeSpent" value="14670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1370" height="739" extended-state="6" />
@@ -282,14 +280,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
+        <state relative-caret-position="20">
           <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/designs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
+        <state relative-caret-position="737">
           <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
         </state>
       </provider>

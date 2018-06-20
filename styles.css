@@ -1,11 +1,16 @@
 body {
   text-align: center;
+  background-image: url('http://www.powerpointhintergrund.com/uploads/colorful-triangles-background-1.jpeg');
+  background-position: center;
+  background-size: auto;
+  margin: 0 auto;
 }
 
 h1 {
   font-family: Monoton;
-  font-size: 70px;
   margin: 0.2em;
+  background: radial-gradient(circle, #fff, transparent);
+  color: #000;
 }
 
 h2 {
@@ -16,7 +21,11 @@ h2:first-of-type {
   margin-top: 0.5em;
 }
 
-table,
+table {
+  border: 2px solid #000;
+}
+
+
 tr,
 td {
   border: 1px solid black;
@@ -33,8 +42,73 @@ tr {
 
 td {
   width: 20px;
+  border-radius: 0%;
 }
 
 input[type="number"] {
   width: 6em;
 }
+
+.box {
+  border : 0 ;
+}
+
+.input-field {
+  width: 100px !important;
+  text-align: center;
+  border-bottom-color: #000 !important;
+  font-size: 25px !important;
+}
+
+.field-text {
+  font-size: 25px;
+  font-variant: small-caps;
+}
+
+#colorPicker {
+  border-radius: 0px;
+  border-color: transparent !important;
+  background-color: transparent !important;
+  height: 40px;
+  width: 60px;
+}
+
+table {
+  margin-bottom: 50px;
+}
+
+#udacityLogo {
+  width: 180px;
+  height: 35px;
+}
+
+footer { 
+  background: radial-gradient(circle, #fff , transparent);
+}
+
+/* Mobile Layout */
+@media screen and (max-width : 500px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .box {
+    margin: 50px 0 50px 0;
+    border: 2px solid #00000070;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 6px 5px 11px 2px #00000080;
+  }
+
+  .input-box {
+    margin: 15px 0 15px 0;
+  }
+
+  .color-picker-box {
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-weight: 300;
+  }
+}  
