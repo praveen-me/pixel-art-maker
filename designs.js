@@ -30,6 +30,12 @@ function makeGrid (){
     
 }
 
+//Using jQuery to set color
+$('body').on('click', 'td', function(e){
+    var colorValue = $('#colorPicker').val();
+    e.target.style.backgroundColor = colorValue;
+})
+
 
 
 
