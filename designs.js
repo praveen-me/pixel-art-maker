@@ -33,14 +33,29 @@ function makeGrid (e){
     }
     
 }
-
-var submitButton = document.getElementById('submitButton');
+//Make Grid
+const submitButton = document.getElementById('submitButton');
 
 submitButton.addEventListener('click', makeGrid);
 
+
+let counter = 0;
+//Set Color to a particular td.
 $('body').on('click', 'td', function(e){
+    counter++;
 	var colorValue = document.getElementById('colorPicker').value;
-  	e.target.style.backgroundColor = colorValue;
+    e.target.style.backgroundColor = colorValue;
+    if(counter % 2 === 0) {
+        e.target.style.backgroundColor = 'transparent';
+    }
+});
+
+//Reset Grid Color
+const reset = document.getElementById('reset');
+reset.addEventListener('click', function(e) {
+    e.preventDefault();
+    const td = document.getElementsByTagName('td');
+    $(td).removeAttr('style');
 });
 
 });
