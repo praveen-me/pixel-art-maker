@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 
 // Select color input
 // Select size input
@@ -42,5 +43,4 @@ $('body').on('click', 'td', function(e){
   	e.target.style.backgroundColor = colorValue;
 });
 
-
-
+});

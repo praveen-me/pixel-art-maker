@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-image: url('http://www.powerpointhintergrund.com/uploads/colorful-triangles-background-1.jpeg');
+  background-image: url('images/back-image.jpeg');
   background-position: center;
   background-size: auto;
   margin: 0 auto;
@@ -86,8 +86,8 @@ footer {
   background: radial-gradient(circle, #fff , transparent);
 }
 
-/* Mobile Layout */
-@media screen and (max-width : 500px) {
+/* Mobile Layout and Tablet */
+@media screen and (max-width : 1099px) {
   h1 {
     font-size: 45px;
   }
@@ -111,4 +111,80 @@ footer {
   h2 {
     font-weight: 300;
   }
+
+  .canvas-container {
+    border: 2px solid #00000070;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 6px 5px 11px 2px #00000080;
+  }
 }  
+
+@media screen and (max-width : 399px) {
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width : 400px) and (max-width : 600px) {
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 380px;
+  }
+}
+
+@media screen and (min-width : 600px) and (max-width : 900px) {
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+  }
+}
+
+@media screen and (min-width : 901px) and (max-width : 1099px) {
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
+}
+
+/* Laptop and bigger devices Layout */
+@media screen and (min-width : 1100px) {
+  
+  body {
+    position: relative;
+  }
+
+  .box {
+    margin: 50px 0 50px 0;
+    border: 2px solid #00000070;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 6px 5px 11px 2px #00000080;
+    width: 450px;
+    display: inline-block;
+    position: absolute;
+    left: 3%;
+  }
+
+  .canvas-container {
+    border: 2px solid #00000070;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 6px 5px 11px 2px #00000080;
+    position: absolute;
+    top: 187%;
+    width: 550px;
+    left: 46%;
+  }
+
+  footer {
+    position: absolute;
+    bottom: -780%;
+    left: 17%;
+  }
+}
