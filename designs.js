@@ -8,10 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
 //Selects Create Grid Button
 const createGridBtn = $('#createGrid');
 
-
-
-
-
 //Select Color Picker
 const colorPicker = $('#colorPicker').val();
 
@@ -35,25 +31,51 @@ const makeGrid = (e) => {
         pixelCanvas.append(row);
         for(let j = 1; j <= inputWidth; j++){
             const column = document.createElement('td');
+            $(column).addClass('pixel-box')
             row.append(column);
         }
         
     }
-}
 
+
+       $(document).mousedown(function () {
+            mouseDown = true; 
+        });
+        
+        $(document).mouseup(function () {
+            mouseDown = false; 
+        });
+
+    $('.pixel-box').hover(function () {
+    
+        let colorValue = $('#colorPicker').val();
+        if(mouseDown){
+            $(this).css('background-color', colorValue);
+        }
+
+    });
+}
+/*  */
 createGridBtn.click(makeGrid);
+
+
 
 
 $('body').on('click','td', function (e) {
     //Color Value
-    let colorValue = document.getElementById('colorPicker').value;
+    var  colorValue = document.getElementById('colorPicker').value;
     if(e.target.style.backgroundColor == ''){
         e.target.style.backgroundColor = colorValue;
     } else {
-        e.target.style.backgroundColor !== 'transparent' ? e.target.style.backgroundColor = 'transparent' : e.target.style.backgroundColor = colorValue;
+        if(e.target.style.backgroundColor !== 'transparent'){  e.target.style.backgroundColor = 'transparent' 
+        } else {
+        e.target.style.backgroundColor = colorValue;
+        }
     }
-
 });
+
+
+
 
 //Reset Grid Color
 const reset = document.getElementById('reset');
@@ -90,10 +112,7 @@ reset.addEventListener('click', function(e) {
 //     }
     
 // }
-// //Make Grid
-// const submitButton = document.getElementById('submitButton');
 
-// submitButton.addEventListener('click', makeGrid);
 
 
 
