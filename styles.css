@@ -1,4 +1,4 @@
-body {
+ body {
   text-align: center;
   background-image: url('images/back-image.jpeg');
   background-position: center;
@@ -6,13 +6,342 @@ body {
   margin: 0 auto;
 }
 
-h1 {
+/* Header CSS Starts   */
+header .row h1 {
+  font-size : 4em;
   font-family: Monoton;
-  margin: 0.2em;
+  margin: 0.1em;
   background: radial-gradient(circle, #fff, transparent);
   color: #000;
 }
 
+/* Header CSS Ends */
+
+/* Grid Tools CSS Starts */
+.grid-tools {
+  border: 2px solid #00000070;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 6px 5px 11px 2px #00000080;
+}
+
+.create-grid {
+  padding: 10px 0 10px 0;
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px 0px #00000080;
+}
+
+.grid-tool-header {
+  font-weight: 300;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.input-field {
+  width: 100px !important;
+  text-align: center;
+  border-bottom-color: #000 !important;
+  font-size: 20px !important;
+}
+
+.field-text {
+  font-size: 20px;
+  font-variant: small-caps;
+}
+
+#height , #width {
+  margin-left: 10px;
+}
+
+.color-box {
+	cursor: pointer;
+	height: 31px;
+	width: 31px;
+	border: 1px solid #252525;
+}
+
+.color-pallete-box {
+  /* border: 2px solid #252525; */
+  border: 2px solid #00000070;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 6px 5px 11px 2px #00000080;
+}
+
+.box {
+  display: inline-block;
+  border: 2px solid #00000070;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 3px 2px 9px 1px #00000080;
+}
+
+.flex-box {
+  display: flex;
+  width: 185px;
+  margin: 0 auto;
+}
+
+
+.flex-box-0 {
+  margin: 0 auto;
+  display: flex;
+}
+.grid-color-box {
+  padding: 10px 0 10px 0;
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px 0px #00000080;
+}
+
+.tool-box {
+  margin: 0 auto;
+  margin-bottom: 5px;
+	border-radius: 1px;
+	text-align: center;
+	border: 2px solid #252525;
+	width: 35px;
+	height: 35px;
+}
+
+.tool-box:hover {
+	cursor: pointer;
+	background-color: #252525;
+}	
+
+.tool-box i:hover{
+  color: #fff;
+}
+
+.grid-tool-box {
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px 0px #00000080;
+  padding: 10px 0 10px 0;
+  margin: 10px;
+}
+
+.current-color-box {
+	margin: 0 auto;
+	height: 35px;
+	width: 35px;
+	border: 2px solid #232323;
+}
+
+.current-tool {
+	text-align: center;
+	margin: 0 auto;
+	height: 35px;
+	width: 35px;
+	border: 2px solid #232323;
+}
+
+.tool-header {
+  font-size:15px; 
+}
+
+
+.grid-tool-status-box {
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px 0px #00000080;
+  padding: 10px 0 10px 0;
+  margin: 10px;
+}
+
+
+/* Pixel Canvas CSS Starts */
+.canvas-box {
+  margin : 2em;
+  margin-top: 4em;
+}
+
+.canvas-header {
+  font-size: 35px;
+  font-weight: 300;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.flex-box-0 {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.pixel-box {
+	height: 25px;
+	width: 25px;
+	border: 1px solid grey;
+}
+/* Pixel Canvas CSS Starts */
+
+
+/* Color Pallet Color */
+.red {
+	background-color: #EE204D;
+}
+
+.pink {
+	background-color: #F780A1;
+}
+
+.orange {
+	background-color: #FF7538;
+}
+
+.yellow {
+	background-color: #FDFC74;
+}
+
+.neon-carrot {
+	background-color: #FFA343;
+}
+
+.sun-glow {
+	background-color: #FFCF48
+}
+
+.sunset {
+	background-color: #FD5E53;
+}
+
+.peach {
+	background-color: #FFCFAB;
+}
+
+.canary {
+	background-color: #FFFF99;
+}
+
+.sea-green {
+	background-color: #9Fe2bf;
+}
+
+.fern {
+	background-color: #71BC78;
+}
+
+.caribbean {
+	background-color: #1cd3a2;
+}
+
+.tropical-green {
+	background-color: #17806D;
+}
+
+.eletric-lime {
+	background-color: #1DF914;
+}
+
+.screamin-green {
+	background-color: #76FF7A;
+}
+
+.green {
+	background-color: #1CAC78;
+}
+
+.blue {
+	background-color: #1F75FE;
+}
+
+.pacific-blue {
+	background-color: #1CA9C9;
+}
+
+.midnight-blue {
+	background-color: #1A4876;
+}
+
+.indigo {
+	background-color: #5D76CB;
+}
+
+.purple {
+	background-color: #7851A9;
+}
+
+.plum {
+	background-color: #8E4584;
+}
+
+.shadow {
+	background-color: #8A795D;
+}
+
+.sepia {
+	background-color: #A5694F;
+}
+
+.brass {
+	background-color: #CD9575;
+}
+
+.gold {
+	background-color: #E7C697;
+}
+
+.apricot {
+	background-color: #FDD9B5
+}
+
+.white {
+	background-color: #EDEDED;
+}
+
+.black {
+	background-color: #232323;
+}
+
+.outer-space {
+	background-color: #414A4C;
+}
+
+.grey {
+	background-color: #95918C;
+}
+
+.manatee {
+	background-color: #979AAA;
+}
+
+.wild-blue {
+	background-color: #A2ADD0;
+}
+
+.scarlet {
+	background-color: #FC2847;
+}
+
+.mahogany {
+	background-color: #CD4A4A
+}
+
+.brick-red {
+	background-color: #CB4154;
+}
+
+.wuzzy {
+	background-color: #CC6666;
+}
+
+
+
+
+/* Responsive CSS Starts */
+
+
+/* Responsive CSS Ends */
+
+
+
+
+/* Grid CSS Tool CSS Ends */
+
+/*
 h2 {
   margin: 1em 0 0.25em;
 }
@@ -86,8 +415,30 @@ footer {
   background: radial-gradient(circle, #fff , transparent);
 }
 
-/* Mobile Layout and Tablet */
-@media screen and (max-width : 1099px) {
+.pixel-box {
+	height: 25px;
+	width: 25px;
+	border: 1px solid grey;
+}
+
+.color-box {
+	cursor: pointer;
+	height: 31px;
+	width: 31px;
+	border: 1px solid #252525;
+}
+
+.color-pallete-box {
+	border: 2px solid #252525;
+}
+
+.box .flex-box {
+  display: flex;
+  width: 190px;
+  margin: 0 auto;
+}
+
+
   h1 {
     font-size: 45px;
   }
@@ -105,7 +456,9 @@ footer {
   }
 
   .color-picker-box {
-    margin-top: 20px;
+    margin: 0 auto;
+    width: 190px;
+    margin-top: 0;
   }
 
   h2 {
@@ -117,8 +470,160 @@ footer {
     box-sizing: border-box;
     border-radius: 5px;
     box-shadow: 6px 5px 11px 2px #00000080;
-  }
-}  
+  }  
+
+
+
+
+
+.red {
+	background-color: #EE204D;
+}
+
+.pink {
+	background-color: #F780A1;
+}
+
+.orange {
+	background-color: #FF7538;
+}
+
+.yellow {
+	background-color: #FDFC74;
+}
+
+.neon-carrot {
+	background-color: #FFA343;
+}
+
+.sun-glow {
+	background-color: #FFCF48
+}
+
+.sunset {
+	background-color: #FD5E53;
+}
+
+.peach {
+	background-color: #FFCFAB;
+}
+
+.canary {
+	background-color: #FFFF99;
+}
+
+.sea-green {
+	background-color: #9Fe2bf;
+}
+
+.fern {
+	background-color: #71BC78;
+}
+
+.caribbean {
+	background-color: #1cd3a2;
+}
+
+.tropical-green {
+	background-color: #17806D;
+}
+
+.eletric-lime {
+	background-color: #1DF914;
+}
+
+.screamin-green {
+	background-color: #76FF7A;
+}
+
+.green {
+	background-color: #1CAC78;
+}
+
+.blue {
+	background-color: #1F75FE;
+}
+
+.pacific-blue {
+	background-color: #1CA9C9;
+}
+
+.midnight-blue {
+	background-color: #1A4876;
+}
+
+.indigo {
+	background-color: #5D76CB;
+}
+
+.purple {
+	background-color: #7851A9;
+}
+
+.plum {
+	background-color: #8E4584;
+}
+
+.shadow {
+	background-color: #8A795D;
+}
+
+.sepia {
+	background-color: #A5694F;
+}
+
+.brass {
+	background-color: #CD9575;
+}
+
+.gold {
+	background-color: #E7C697;
+}
+
+.apricot {
+	background-color: #FDD9B5
+}
+
+.white {
+	background-color: #EDEDED;
+}
+
+.black {
+	background-color: #232323;
+}
+
+.outer-space {
+	background-color: #414A4C;
+}
+
+.grey {
+	background-color: #95918C;
+}
+
+.manatee {
+	background-color: #979AAA;
+}
+
+.wild-blue {
+	background-color: #A2ADD0;
+}
+
+.scarlet {
+	background-color: #FC2847;
+}
+
+.mahogany {
+	background-color: #CD4A4A
+}
+
+.brick-red {
+	background-color: #CB4154;
+}
+
+.wuzzy {
+	background-color: #CC6666;
+}
+
 
 @media screen and (max-width : 399px) {
   main {
@@ -153,7 +658,7 @@ footer {
 }
 
 /* Laptop and bigger devices Layout */
-@media screen and (min-width : 1100px) {
+/* @media screen and (min-width : 1100px) {
   
   body {
     position: relative;
@@ -187,4 +692,4 @@ footer {
     bottom: -780%;
     left: 17%;
   }
-}
+} */ */
