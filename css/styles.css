@@ -23,8 +23,10 @@ header .row h1 {
   position: fixed;
   left: 30%;
   background-color: #dbdbdb;
-  border: 5px solid #252525;
-  border-radius: 16px;
+  border: 2px solid #00000070;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 6px 5px 11px 2px #00000080;
   width: 200px;
 }
 
@@ -173,6 +175,10 @@ header .row h1 {
 .canvas-box {
   margin : 2em;
   margin-top: 4em;
+  border: 2px solid #00000070;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 6px 5px 11px 2px #00000080;
 }
 
 .canvas-header {
@@ -200,6 +206,7 @@ header .row h1 {
   font-size: 25px;
   font-weight: 300;
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .download-section {
@@ -208,6 +215,10 @@ header .row h1 {
   box-shadow: 2px 3px 4px 0px #00000080;
   padding: 10px 0 10px 0;
   margin: 10px;
+}
+
+.download-section #download button{
+  margin-bottom: 10px;
 }
 
 .connect-with-creator {

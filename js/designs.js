@@ -54,7 +54,7 @@ function mousePress() {
 function gridInfo() {
 	if($(window).width() >= 1184) {
 		$('.grid-info').empty();
-		$('.grid-info').append('The grid size should be 20 X 30.');
+		$('.grid-info').append('The grid size should be 30 X 30.');
 		
 	} else if (($(window).width() >= 978) && ($(window).width() <= 1183)) {
 		$('.grid-info').empty();
@@ -68,12 +68,13 @@ function gridInfo() {
 	}
 }
 
-function warning (height, width) {
+function warning () {
 	$('.warning').empty();
 	$('.warning').append()
 	$('.warning').css('display', 'block');
 	$('.warning').addClass('animated fadeInLeftBig ');
-
+}
+function closeWarning () {
 	$('.warning-close').click(function () {
 		$('.warning').css('display', 'none');
 	});
@@ -88,29 +89,41 @@ const createGrid = (e) => {
 	//Setting Alert for different width
 	if($(window).width() >= 1184) {
 		if((height > 30) || (width > 30) || (height > 30 && width > 30)) {
-			$('.warning').append(`<p>The grid shuld be 30 X 30. Your values are ${height} X ${width}.</p> <button class="warning-close">X</button>`);
-			warning(height, width);	
+			warning();	
+			
+			$('.warning').append(`<p>The grid should be 30 X 30. Your values are ${height} X ${width}.</p> <button class="warning-close">X</button>`);
+			
+			closeWarning();
 		}else {
 			grid();
 		}
 	} else if (($(window).width() >= 978) && ($(window).width() <= 1183)) {
 		if((height > 20) || (width > 20) || (height >20 && width > 20)) {
-			$('.warning').append(`<p>The grid shuld be 20 X 20. Your values are ${height} X ${width}.</p> <button class="warning-close">X</button>`);
-			warning(height, width);
+			warning();
+			
+			$('.warning').append(`<p>The grid should be 20 X 20. Your values are ${height} X ${width}.</p> <button class="warning-close">X</button>`);
+			
+			closeWarning();
 		}else {
 			grid();
 		}
 	} else if (($(window).width() >= 584) && ($(window).width() <= 977)) {
 		if((height > 15) || (width > 15) || (height >15 && width > 15)) {
-			$('.warning').append(`<p>The grid shuld be 15 X 15. Your values are ${height} X ${width}.</p> <button class="warning-close">X</button>`);
-			warning(height, width);
+			warning();
+
+			$('.warning').append(`<p>The grid should be 15 X 15. Your values are ${height} X ${width}.</p> <button class="warning-close">X</button>`);
+			
+			closeWarning();
 		}else {
 			grid();
 		}
 	} else if ($(window).width() <= 583) {
 		if((height > 10) || (width > 10) || (height > 10 && width > 10)) {
-			$('.warning').append(`<p>The grid shuld be 10 X 10. Your values are ${height} X ${width}.</p> <button class="warning-close">X</button>`);
-			warning(height, width);
+			warning();
+
+			$('.warning').append(`<p>The grid should be 10 X 10. Your values are ${height} X ${width}.</p> <button class="warning-close">X</button>`);
+			
+			closeWarning();
 		}else {
 			grid();
 		}
