@@ -80,25 +80,25 @@ const createGrid = (e) => {
 		$('.grid-info').empty();
 		$('.grid-info').append('The grid size should be 20 X 30.');
 		if((height > 20) || (width > 30) || (height > 20 && width > 30)) {
-			alert("You are wrong");
+			alert(`The grid shuld be 20 X 30. Your values are ${height} X ${width}.`);
 		}else {
 			grid();
 		}
 	} else if (($(window).width() >= 978) && ($(window).width() <= 1183)) {
 		if((height > 20) || (width > 20) || (height >20 && width > 20)) {
-			alert("You are wrong now");
+			alert(`The grid shuld be 20 X 20. Your values are ${height} X ${width}.`);
 		}else {
 			grid();
 		}
 	} else if (($(window).width() >= 584) && ($(window).width() <= 977)) {
 		if((height > 15) || (width > 15) || (height >15 && width > 15)) {
-			alert("You are a fool");
+			alert(`The grid shuld be 15 X 15. Your values are ${height} X ${width}.`);
 		}else {
 			grid();
 		}
 	} else if ($(window).width() <= 583) {
 		if((height > 10) || (width > 10) || (height > 10 && width > 10)) {
-			alert("Ab to  tu pakka gya");
+			alert(`The grid shuld be 10 X 10. Your values are ${height} X ${width}.`);
 		}else {
 			grid();
 		}
