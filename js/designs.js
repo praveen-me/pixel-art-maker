@@ -68,6 +68,17 @@ function gridInfo() {
 	}
 }
 
+function warning (height, width) {
+	$('.warning').empty();
+	$('.warning').append(`<p>The grid shuld be 20 X 30. Your values are ${height} X ${width}.</p> <button class="warning-close">X</button>`);
+	$('.warning').append()
+	$('.warning').css('display', 'block');
+	$('.warning').addClass('animated fadeInLeftBig ');
+
+	$('.warning-close').click(function () {
+		$('.warning').css('display', 'none');
+	});
+}
 
 // Creating Dynamic Grid Function
 const createGrid = (e) => {
@@ -77,28 +88,26 @@ const createGrid = (e) => {
 
 	//Setting Alert for different width
 	if($(window).width() >= 1184) {
-		$('.grid-info').empty();
-		$('.grid-info').append('The grid size should be 20 X 30.');
 		if((height > 20) || (width > 30) || (height > 20 && width > 30)) {
-			alert(`The grid shuld be 20 X 30. Your values are ${height} X ${width}.`);
+			warning(height, width);	
 		}else {
 			grid();
 		}
 	} else if (($(window).width() >= 978) && ($(window).width() <= 1183)) {
 		if((height > 20) || (width > 20) || (height >20 && width > 20)) {
-			alert(`The grid shuld be 20 X 20. Your values are ${height} X ${width}.`);
+			warning(height, width);
 		}else {
 			grid();
 		}
 	} else if (($(window).width() >= 584) && ($(window).width() <= 977)) {
 		if((height > 15) || (width > 15) || (height >15 && width > 15)) {
-			alert(`The grid shuld be 15 X 15. Your values are ${height} X ${width}.`);
+			warning(height, width);
 		}else {
 			grid();
 		}
 	} else if ($(window).width() <= 583) {
 		if((height > 10) || (width > 10) || (height > 10 && width > 10)) {
-			alert(`The grid shuld be 10 X 10. Your values are ${height} X ${width}.`);
+			warning(height, width);
 		}else {
 			grid();
 		}
@@ -216,7 +225,19 @@ $(document).ready(function () {
 
 });
 
-
+function download() {
+	var pixelBox = $('#canvas');
+	
+		html2canvas(pixelBox, {
+			onrendered : (canvas) => {
+				var dataURL = canvas.toDataURL('image/png');
+				var button = document.getElementById('download');
+				button.href = dataURL;
+			} 
+		});
+	}
+	
+document.getElementById('download').addEventListener('click', download);
 
 
 // document.addEventListener('DOMContentLoaded', function() {

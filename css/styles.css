@@ -1,6 +1,6 @@
  body {
   text-align: center;
-  background-image: url('images/back-image.jpeg');
+  background-image: url('../images/back-image.jpeg');
   background-position: center;
   background-size: auto;
   margin: 0 auto;
@@ -16,6 +16,21 @@ header .row h1 {
 }
 
 /* Header CSS Ends */
+
+/* Warning Box CSS */
+.warning {
+  display : none;
+  position: fixed;
+  left: 30%;
+  background-color: #dbdbdb;
+  border: 5px solid #252525;
+  border-radius: 16px;
+  width: 200px;
+}
+
+.warning-close {
+  position: fixed;
+}
 
 /* Grid Tools CSS Starts */
 .grid-tools {
@@ -153,6 +168,7 @@ header .row h1 {
 }
 
 
+
 /* Pixel Canvas CSS Starts */
 .canvas-box {
   margin : 2em;
@@ -177,6 +193,50 @@ header .row h1 {
 	border: 1px solid grey;
 }
 /* Pixel Canvas CSS Starts */
+
+
+/* Footer CSS Starts */
+.share-header {
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.download-section {
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px 0px #00000080;
+  padding: 10px 0 10px 0;
+  margin: 10px;
+}
+
+.connect-with-creator {
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px 0px #00000080;
+  padding: 10px 0 10px 0;
+  margin: 10px;
+}
+
+.social-box i {
+  font-size: 30px;
+  color: #252525;
+}
+
+.social-box a {
+  margin: 0px 20px 0 20px;
+  cursor: pointer
+}
+
+#udacityLogo {
+  width: 200px;
+  height: 50px;
+}
+
+footer {
+  background: radial-gradient(circle,#e0e0e08c, transparent);
+}
+/* Footer CSS Ends */
 
 
 /* Color Pallet Color */
