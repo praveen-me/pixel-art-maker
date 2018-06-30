@@ -256,6 +256,11 @@ main .row {
 footer {
   background: radial-gradient(circle,#e0e0e08c, transparent);
 }
+
+footer p{
+  font-size: 1.5em;
+  font-weight: 300;
+}
 /* Footer CSS Ends */
 
 
