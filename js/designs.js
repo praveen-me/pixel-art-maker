@@ -257,7 +257,6 @@ document.getElementById('download').addEventListener('click', download);
 
 
 
-
 // //Pure Js Code
 // // function makeGrid (e){
 // //     e.preventDefault();

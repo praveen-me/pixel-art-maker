@@ -263,6 +263,14 @@ footer p{
 }
 /* Footer CSS Ends */
 
+/* Button CSS */
+.btn {
+  box-shadow: 9px 8px 6px 2px #0000001f;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 1px 1px #0000003d !important;
+}
 
 
 @media screen and (max-width :1201px ){
