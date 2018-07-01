@@ -15,6 +15,68 @@ function initCurrentColorAndTool() {
 	$('.current-tool').append(`<i class="fa fa-${currentTool} fa-2x"></i>`);
 }
 
+function addColorBoxes () {
+	const colorRowFirst = ['wuzzy', 'mahogany', 'brick-red', 'scarlet', 'sunset', 'pink'];
+
+	const colorRowSecond = ['red', 'orange', 'neon-carrot', 'sun-glow', 'yellow', 'canary'];
+
+	const colorRowThird = ['shadow', 'sepia', 'brass', 'gold', 'peach', 'apricot'];
+
+	const colorRowFourth = ['tropical-green', 'green', 'fern', 'screamin-green', 'caribbean', 'sea-green'];
+
+	const colorRowFifth = ['midnight-blue', 'plum', 'purple', 'indigo', 'blue', 'pacific-blue'];
+
+	const colorRowSixth = ['black', 'outer-space', 'grey', 'manatee', 'wild-blue', 'white'];
+
+	$('.box').empty();
+	var doc = document.createDocumentFragment();
+	var k = document.createElement('div');
+	$(k).addClass('flex-box');
+	for(color of colorRowFirst){
+		$(k).append(`<div class="color-box ${color}"></div>`);
+	}
+	doc.appendChild(k);
+	
+	var a = document.createElement('div');
+	$(a).addClass('flex-box');
+	for(color of colorRowSecond){
+		$(a).append(`<div class="color-box ${color}"></div>`);
+	}
+	doc.appendChild(a);
+
+	var b = document.createElement('div');
+	$(b).addClass('flex-box');
+	for(color of colorRowThird){
+		$(b).append(`<div class="color-box ${color}"></div>`);
+	}
+	doc.appendChild(b);
+
+	var c = document.createElement('div');
+	$(c).addClass('flex-box');
+	for(color of colorRowFourth){
+		$(c).append(`<div class="color-box ${color}"></div>`);
+	}
+	doc.appendChild(c);
+
+	var d = document.createElement('div');
+	$(d).addClass('flex-box');
+	for(color of colorRowFifth){
+		$(d).append(`<div class="color-box ${color}"></div>`);
+	}
+	doc.appendChild(d);
+
+	var e = document.createElement('div');
+	$(e).addClass('flex-box');
+	for(color of colorRowSixth){
+		$(e).append(`<div class="color-box ${color}"></div>`);
+	}
+	doc.appendChild(e);
+
+	$('.box').append(doc);
+
+}
+
+
 function addingColorToPixels () {
 	//Adding Color Functioning to Pixel	
 	$('.pixel-box').click(function (){
@@ -230,6 +292,8 @@ function toolFunctionalities() {
 $(document).ready(function () {
 
 	initCurrentColorAndTool();
+
+	addColorBoxes();
 
 	gridInfo();
 
